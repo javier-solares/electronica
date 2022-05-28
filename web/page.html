@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto electronica</title>
+
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/stilobuttons.css">
+    <link rel="stylesheet" href="css/botones2.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet">
+</head>
+
+<body onload="startTime()">
+
+    <header>
+        <div class="clockdate">
+            <span id="time"></span>
+            <span id="date"></span>
+        </div>
+
+        <nav>
+
+
+            <!--<a href="./info.html">Proyecto</a>
+            <a href="#"></a>-->
+            <a href="../informe.pdf" target="_blank">Informe</a>
+            <a href="../presentacion.pdf" target="_blank">Presentacion</a>
+            <a href="https://youtu.be/zShW1PZLhww" target="_blank">Video</a>
+
+
+        </nav>
+
+        <section class="textos-header">
+            <h1></h1>
+            <h2></h2>
+        </section>
+        <div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+                <path d="M0.00,49.98 C150.00,150.00 349.20,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+                    style="stroke: none; fill: #fff;"></path>
+            </svg></div>
+    </header>
+    <main>
+        <section class="contenedor sobre-nosotros">
+            <h2 class="titulo">INTEGRANTES DE GRUPO</h2>
+            <div class="contenedor-sobre-nosotros">
+                <img src="https://i.pinimg.com/originals/34/22/90/3422900cb9e9bd4ce803847129eb6c9f.jpg" alt="" class="imagen-about-us">
+                <div class="contenido-textos">
+                    <li>David Alfredo Valle Izquierdo 3590-20-12364 </li>
+                    <li>Lennyn Ennio Renato Rodríguez Chacón 3590-20-219</li>
+                    <li>Adan Roberto Guerrero Rodas 3590-19-2353</li>
+                    <li>Nehemias Abdiel Osvaldo Pineda Cermeño 3590-20-7785</li>
+                    <li>Horacio Kevin Javier Osorio Solares 3590-20-3418</li>
+                </div>
+            </div>
+        </section>
+        <section class="contenedor inf">
+            <h2 class="titulo">Proyecto de Electrónica</h2>
+            <div class="contenedor-inf">
+
+                <div class="contenido-textos">
+                    <ul>
+                        <h3>Objetivo del proyecto</h3>
+                    </ul>
+                    <li>
+                        Implementar una solución que permita hacer uso de los amplificadores, diodos, resistencias, entre otros, aplicando los conocimientos adquiridos en el curso y durante la carrera de Ingeniería.
+                    </li>
+                    <ul>
+                        <h3>Objetivos Generales:</h3>
+                    </ul>
+                    <li>Obtener conocimientos y formacion sobre circuitos electricos.</li>
+                    <li>Solucionar la problemática planteada </li>
+                    <li>Tomar en cuenta los factores influyentes para la solucion planteada</li>
+                    <ul>
+                        <h3>Objetivos especificos</h3>
+                    </ul>
+                    <li>Diseñar los circuitos correspondientes para nuestra solucion</li>
+                    <li>Investigar sobre el funcionamiento y caracteristicas de los paneles solares</li>
+                    <li>Planear el diseñeo y planteamiento del prototipo de solución.</li>
+                    <li>Investigar sobre los probadores operacionales</li>
+                    <li>Investigar sobre los Inversores.</li>
+                </div>
+                <div class="contenido-textos">
+                    <ul>
+                        <h3>Problema</h3>
+                    </ul>
+                    <li>
+                        La empresa Electrónica de Guatemala desea que los estudiantes del quinto ciclo de Ingeniería en Sistemas de la Universidad Mariano Gálvez de Guatemala, realicen una Evaluación, análisis y diseño de solución a la problemática planteada. Electrónica de
+                        Guatemala desea lo siguiente:
+                    </li>
+                    <ul>
+                        <h3>Probador de operacionales</h3>
+                    </ul>
+                    <li>El circuito es un oscilador, el diodo de color verde va a estar encendiéndose y apagándose esto significa que el operacional está en buen estado, si no enciende o permanece encendido el operacional estará malo. El diodo LED amarillo
+                        permanecerá encendido todo el tiempo, ya que este solo indica que el circuito está encendido.</li>
+                    <ul>
+                        <h3>Inversor de 12VDC a 120Vac</h3>
+                    </ul>
+                    <li>A partir de una batería de 12V se obtiene la alimentación para los dos circuitos integrados. El Ne555 sirve para garantizar la señal de reloj del flip flop, a la vez el flip flop para garantizar la frecuencia de 60Hz. En la salida
+                        del flip flop se obtienen señales de la misma magnitud, pero desfasadas 180o para garantizar que primero funcionen los dos MOSFET de la parte superior y luego los otros dos MOSFET de la parte inferior.</li>
+                </div>
+            </div>
+        </section>
+        <section class="portafolio">
+            <div class="contenedor">
+                <h2 class="titulo"></h2>
+                <div class="galeria-port">
+
+                    <div class="contenido-textos">
+                        <h2 class="titulo">Nuestra Solucion</h2>
+                        <p>Nuestra solución a la problemática planteada, utilizando como recursos tanto como el “probador de operacionales” y el “inversor de 12VDC a 120Vac” es utilizando energía solar a través de paneles solares. Los paneles solares gracias
+                            a su capacidad de generar calor y electricidad, nos servirán para recargar baterías que a su vez estas con el inversor, convertiremos de 12VDC a 120Vac para suministrar energía eléctrica al centro de control en el volcán. Por
+                            medio del probador de operacionales, podemos observar si los circuitos están en su correcto funcionamiento.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <section class="clientes contenedor">
+            <h2 class="titulo">Que son los paneles solares</h2>
+            <li>Un panel solar es un dispositivo que aprovecha la energía del sol para generar calor o electricidad. Según estos dos fines podemos distinguir entre colectores solares, que producen agua caliente (generalmente de uso doméstico) utilizando la
+                energía solar térmica, y paneles fotovoltaicos, que generan electricidad a partir de la radiación solar que incide sobre las células fotovoltaicas del panel.</li>
+            <li>En el colector o captador solar hay un líquido que absorbe la radiación solar en forma de calor, este líquido pasa posteriormente a un compartimento de almacenado de calor. Los paneles constan de una placa receptora y unos conductos por los
+                que circula dicho líquido. El líquido caliente se hace pasar a un intercambiador de calor, donde cede su calor calentando el agua de posterior uso doméstico. Cuando sale del intercambiador de calor el líquido está frío y se recircula de
+                nuevo al colector solar.</li>
+            <li>Respecto a la potencia que pueden generar los paneles de tamaño estándar, se calcula que un módulo de 2 x 1 metro entre 60 y 72 células proporciona aproximadamente entre 300 y 445 Wp (vatios pico) por cada hora de sol.</li>
+
+        </section>
+        <section class="portafolio">
+            <div class="contenedor">
+                <h2 class="titulo"></h2>
+                <div class="galeria-port">
+
+                    <div class="contenido-textos">
+                        <h2 class="titulo">Nuestras amenazas:</h2>
+                        <p>Analizando nuestra propuesta, sus ventajas y desventajas, hemos encontrado varias situaciones que nos podrían perjudicar en el lanzamiento de nuestro prototipo de solución Estos riesgos y amenazas son:
+                        </p>
+                        <li>El clima: Ya que nuestra solución se basa en energía solar, los paneles solares detendrán su producción por las noches y en climas no cálidos.</li>
+                        <li>Penetraciones en el techo: Una sección mal instalada de sistema de montaje puede causar que el agua se filtre en su hogar, dañando su longevidad.</li>
+                        <li>Cargas de viento: Un panel solar grande y plano atornillado a una estructura en su techo es como una vela gigante el viento puede tirar de ellos hacia arriba si se instalan mal, estos paneles solares pueden causar grandes daños.</li>
+                        <li>Peligros eléctricos y de incendio: Las corrientes inadecuadamente integradas pueden causar problemas eléctricos y peligros de electrocución que pueden ser un peligro para su vida y propiedad, causando incendios y amenazas a la
+                            vida humana.</li>
+                        <li>Erupción Volcánica: Tomando en cuenta el punto en donde se planea establecer el puesto de control, se tiene siempre el peligro de que una erupción volcánica suceda.</li>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="botn contenedor">
+            <h2 class="titulo">ANEXOS</h2>
+
+            <a href="./img/2.jpg" target="">
+                <button class="fill">circuito de solucion</button>
+            </a>
+            <a href="./img/1.jpg" target="">
+                <button class="up">probador operacional</button>
+            </a>
+            <a href="./img/3.jpg" target="">
+                <button class="offset">diseño</button>
+            </a>
+            <!--
+                <a href="./img/" target="">
+                <button class="close">P.Pd</button>
+            </a>
+
+            <a href="./img/" target="">
+                <button class="offset">video</button>
+            </a>
+            -->
+
+        </section>
+    </main>
+    <footer>
+        <div class="contenedor-footer">
+            <div class="content-foo">
+
+            </div>
+            <div class="content-foo">
+
+            </div>
+            <!-- <div class="content-foo">
+                <h4>Location</h4>
+                <p>8296312</p>
+            </div>-->
+
+        </div>
+        <h2 class="titulo-final">&copy; </h2>
+    </footer>
+
+
+
+    <script src="./scirpt.js"></script>
+
+
+</body>
+
+</html>
